@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Invitación | David & María</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.invitation {
+  position: relative;
+  background-image: url('DSC09045 copia 2.jpg');
+  background-size: cover;
+  background-position: 30% 75%; /* 👈 Ajuste para que se vea la pareja */
+  background-repeat: no-repeat;
+
+  width: 100%;
+  max-width: 430px;
+  min-height: 100vh;
+
+  margin: auto;
+  color: #f5e6c8;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 20px;
+
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Overlay elegante degradado */
+.invitation::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.8) 0%,
+    rgba(0,0,0,0.6) 35%,
+    rgba(0,0,0,0.3) 65%,
+    rgba(0,0,0,0.15) 100%
+  );
+}
+
+/* CONTENIDO */
+.content {
+  position: relative;
+  padding: 40px 25px 50px;
+  width: 100%;
+}
+
+.subtitle {
+  font-size: 0.8em;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.names {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.2em;
+  margin: 20px 0 30px;
+  color: #f7e7c6;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 1em;
+  letter-spacing: 2px;
+}
+
+.day {
+  font-size: 2.4em;
+  font-weight: 600;
+}
+
+.time {
+  margin: 20px 0 30px;
+  font-size: 1.2em;
+}
+
+.info {
+  font-size: 0.95em;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 14px 20px;
+  border-radius: 30px;
+  font-size: 0.95em;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.85);
+  color: #3a2d16;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: #f7e7c6;
+}
+
+.rsvp {
+  margin-top: 30px;
+  font-size: 0.85em;
+  line-height: 1.6;
+}
+
+/* Animación suave */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .invitation {
+    min-height: 90vh;
+  }
+
+  .names {
+    font-size: 3.5em;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Música de fondo -->
+<iframe width="0" height="0"
+  src="https://www.youtube.com/embed/6hKp4oY8L7w?autoplay=1&loop=1&playlist=6hKp4oY8L7w"
+  frameborder="0"
+  allow="autoplay">
+</iframe>
+
+<div class="invitation">
+  <div class="content">
+
+    <div class="subtitle">NOS COMPLACE INVITARLOS A NUESTRA BODA</div>
+
+    <div class="names">María y David</div>
+
+    <div class="date">
+      <span>SÁBADO</span>
+      <span class="day">28</span>
+      <span>FEBRERO</span>
+    </div>
+
+    <div class="time">2:00 P.M.</div>
+
+    <div class="info">
+      IGLESIA CATÓLICA<br>
+      CANDELARIA (BAJO CORRALES)<br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+
+    <div class="buttons">
+      <a class="btn" href="https://maps.app.goo.gl/M2rP9gvrDyGKbfM77" target="_blank">
+        📍 Ver ubicación
+      </a>
+    </div>
+
+    <div class="rsvp">
+      Queremos que nos acompañes durante el sacramento del matrimonio para compartir juntos este paso tan importante<br>
+  
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
